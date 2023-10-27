@@ -15,13 +15,44 @@
 </head>
 
 <body class="global-body">  
-    <div class="container-header">
+    <div class="section container-header">
         <div class="logo-header">
             <a class="logo" href="#">
                 <span class="logo-web">Web</span>
                 <span class="studio">Studio</span>
             </a>
         </div>
+
+        <svg class="menu-button js-open-menu open-menu-mobile">
+            <use href="./Images/symbol-defs.svg#icon-open-menu-mobile-btn"/>
+        </svg>
+
+    <div class="js-menu-container">
+        <nav class="nav-menu-mobile">
+            <a href="index.html">Studio</a>
+            <a href="portofolio.html" id="current">Portofolio</a>
+            <a href="#">Contacts</a>
+        </nav>
+
+        <div class="contacts-menu-mobile">
+            <a>info@devstudio.com</a>
+            <a>+1 212-772-4150</a>
+        </div>
+
+        <div class="mobile-links">
+            <a>Instagram</a>
+            <img src="./Images/Line.jpg" alt="line">
+            <a>Twitter</a>
+            <img src="./Images/Line.jpg" alt="line">
+            <a>Facebook</a>
+            <img src="./Images/Line.jpg" alt="line">
+            <a>LinkedIn</a>
+        </div>
+        
+            <svg class="menu-toggle js-close-menu close-menu-mobile">
+                <use href="./Images/symbol-defs.svg#icon-close-menu-mobile-btn"/>
+            </svg>
+    </div>
 
         <header class="header">
             <nav class="navigation">
@@ -49,7 +80,7 @@
     </div>
     
     <main>
-        <div class="container-portofolio">
+        <div class="section container-portofolio">
             <nav class="btn-portofolio">
                 <ul class="button-navigation">
                     <li><button class="buttons" type="button">All</button></li>
@@ -63,7 +94,35 @@
             <section class="portofoliu">
                 <ul class="card-set-portofoliu">
                     <li class="cards-prtf">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/technoduck.jpg 1x,
+                              ./Images/technoduck-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/technoduck-t_1x.jpg 1x,
+                              ./Images/technoduck-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/technoduck-m_1x.jpg 1x,
+                              ./Images/technoduck-m_2x.jpg 2x
+                              "
+                            />
+              
                             <img src="./Images/technoduck.jpg" alt="web page">
+                        </picture>
                             <div class="overlay">
                                 <p class="text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                             </div>
@@ -74,7 +133,35 @@
                     </li>
         
                     <li class="cards-prtf">
-                        <img src="./Images/poster.jpg" alt="backetball players">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/poster.jpg 1x,
+                              ./Images/poster-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/poster-t_1x.jpg 1x,
+                              ./Images/poster-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/poster-m_1x.jpg 1x,
+                              ./Images/poster-m_2x.jpg 2x
+                              "
+                            />
+              
+                            <img src="./Images/poster.jpg" alt="backetball players">
+                        </picture>
                         <div class="overlay">
                             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio beatae, quaerat consectetur est temporibus quo commodi esse cupiditate rem facilis provident nulla eaque, excepturi culpa id mollitia illum totam!</p>
                         </div>
@@ -85,7 +172,35 @@
                     </li>
                     
                     <li class="cards-prtf">
-                        <img src="./Images/seafood.jpg" alt="seafood restaurant">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/seafood.jpg 1x,
+                              ./Images/seafood-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/seafood-t_1x.jpg 1x,
+                              ./Images/seafood-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/seafood-m_1x.jpg 1x,
+                              ./Images/seafood-m_2x.jpg 2x
+                              "
+                            />
+              
+                            <img src="./Images/seafood.jpg" alt="seafood restaurant">
+                        </picture>
                         <div class="overlay">
                             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eaque soluta voluptatem, sed provident inventore sunt quasi asperiores maiores, nulla qui, autem totam nobis exercitationem. At, qui. At, in vitae!</p>
                         </div>
@@ -96,7 +211,35 @@
                     </li>
         
                     <li class="cards-prtf">
-                        <img src="./Images/project.jpg" alt="headphones">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/project.jpg 1x,
+                              ./Images/project-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/project-t_1x.jpg 1x,
+                              ./Images/project-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/project-m_1x.jpg 1x,
+                              ./Images/project-m_2x.jpg 2x
+                              "
+                            />
+              
+                            <img src="./Images/project.jpg" alt="headphones">
+                        </picture>
                         <div class="overlay">
                             <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt in minima fugiat corporis molestiae id, maiores deserunt rem! Porro reiciendis, quas beatae harum nihil eum ipsa quo iste provident laboriosam.</p>
                         </div>
@@ -107,7 +250,35 @@
                     </li>
         
                     <li class="cards-prtf">
-                        <img src="./Images/projectboxes.jpg" alt="boxes">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/projectboxes.jpg 1x,
+                              ./Images/projectboxes-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/projectboxes-t_1x.jpg 1x,
+                              ./Images/projectboxes-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/projectboxes-m_1x.jpg 1x,
+                              ./Images/projectboxes-m_2x.jpg 2x
+                              "
+                            />
+              
+                            <img src="./Images/projectboxes.jpg" alt="boxes">
+                        </picture>
                         <div class="overlay">
                             <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam dolores harum temporibus sed eum dicta, provident sapiente aperiam amet molestiae aliquid hic assumenda cupiditate veritatis rerum quis sint vel fugiat.</p>
                         </div>
@@ -118,7 +289,35 @@
                     </li>
         
                     <li class="cards-prtf">
-                        <img src="./Images/inspiration.jpg" alt="computer">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/inspiration.jpg 1x,
+                              ./Images/inspiration-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/inspiration-t_1x.jpg 1x,
+                              ./Images/inspiration-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/inspiration-m_1x.jpg 1x,
+                              ./Images/inspiration-m_2x.jpg 2x
+                              "
+                            />
+              
+                            <img src="./Images/inspiration.jpg" alt="computer">
+                        </picture>
                         <div class="overlay">
                             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum exercitationem harum nemo enim accusantium, omnis vero aliquam similique quis sint eveniet commodi accusamus ipsa? Libero blanditiis provident at consequuntur quisquam.</p>
                         </div>
@@ -129,7 +328,35 @@
                     </li>
         
                     <li class="cards-prtf">
-                        <img src="./Images/limited.jpg" alt="book">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/limited.jpg 1x,
+                              ./Images/limited-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/limited-t_1x.jpg 1x,
+                              ./Images/limited-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/limited-m_1x.jpg 1x,
+                              ./Images/limited-m_2x.jpg 2x
+                              "
+                            />
+              
+                            <img src="./Images/limited.jpg" alt="book">
+                        </picture>
                         <div class="overlay">
                             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, non? Voluptates autem voluptatum animi totam reiciendis. Est assumenda ipsam accusamus ad consequatur odit illo repellendus, ab eum perspiciatis, esse quos?</p>
                         </div>
@@ -140,7 +367,35 @@
                     </li>
         
                     <li class="cards-prtf">
-                        <img src="./Images/projectlab.jpg" alt="label tag">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/projectlab.jpg 1x,
+                              ./Images/projectlab-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/projectlab-t_1x.jpg 1x,
+                              ./Images/projectlab-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/projectlab-m_1x.jpg 1x,
+                              ./Images/projectlab-m_2x.jpg 2x
+                              "
+                            />
+              
+                            <img src="./Images/projectlab.jpg" alt="label tag">
+                        </picture>
                         <div class="overlay">
                             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel, ipsum omnis enim inventore minus a voluptate fugiat aperiam, nesciunt assumenda quis laboriosam laudantium at corrupti nostrum. Doloribus, ut dolore.</p>
                         </div>
@@ -151,7 +406,35 @@
                     </li>
         
                     <li class="cards-prtf">
-                        <img src="./Images/growing.jpg" alt="work on the computer">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                              ./Images/growing.jpg 1x,
+                              ./Images/growing-d_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                              ./Images/growing-t_1x.jpg 1x,
+                              ./Images/growing-t_2x.jpg 2x
+                              "
+                            />
+              
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                              ./Images/growing-m_1x.jpg 1x,
+                              ./Images/growing-m_2x.jpg 2x
+                              "
+                            />
+              
+                            <img src="./Images/growing.jpg" alt="work on the computer">
+                        </picture>
                         <div class="overlay">
                             <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquam facere libero cumque ut beatae officiis illo suscipit, voluptate molestias doloremque necessitatibus incidunt commodi consequuntur, accusamus adipisci et nihil numquam?</p>
                         </div>
@@ -164,7 +447,7 @@
             </section>
         </div>
         
-        <footer class="footer-section">
+        <footer class="section footer-section">
             <div class="footer-container">
                 <div class="logo-footer">
                     <a class="logo" href="#">
@@ -238,6 +521,5 @@
     </main>
 
     <script src="./js/mobile-menu.js"></script>
-    
 </body>
 </html>
